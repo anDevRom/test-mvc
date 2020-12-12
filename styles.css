@@ -1,0 +1,30 @@
+body {
+    background-color: grey;
+}
+
+.table-content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 600px;
+    height: 200px;
+}
+
+.table__current-state {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: 1px solid white;
+}
+
+.table__deaths {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
